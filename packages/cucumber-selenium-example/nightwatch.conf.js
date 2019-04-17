@@ -6,6 +6,7 @@ const edgeDriver = require('edgedriver');
 
 module.exports = {
   custom_assertions_path: 'custom-assertions',
+  page_objects_path: 'pages',
   test_settings: {
     default: {
       selenium: {

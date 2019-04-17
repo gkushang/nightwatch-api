@@ -2,6 +2,8 @@ import { client } from 'nightwatch-api';
 import { Given, Then } from 'cucumber';
 
 Given(/^I open Google`s search page$/, async () => {
+  var loginpage = client.page.login_page();
+  await loginpage.login();
   await client.url('http://google.com');
 });
 
